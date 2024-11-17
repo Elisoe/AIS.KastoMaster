@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIS.KastoMaster", "AIS.KastoMaster\AIS.KastoMaster.csproj", "{36C67ABD-3437-4DB6-8809-60F3990E7290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36C67ABD-3437-4DB6-8809-60F3990E7290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C67ABD-3437-4DB6-8809-60F3990E7290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C67ABD-3437-4DB6-8809-60F3990E7290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C67ABD-3437-4DB6-8809-60F3990E7290}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1894125-02F1-4A42-99F9-CF93D4402C9A}
+	EndGlobalSection
+EndGlobal
