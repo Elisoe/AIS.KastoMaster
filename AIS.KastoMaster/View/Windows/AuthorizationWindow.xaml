@@ -30,13 +30,13 @@
         <StackPanel Grid.Row="2" Grid.Column="1">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Image Source="/Sourse/user.png" Width="30" />
-                <TextBox Text="Введите имя пользователя" VerticalContentAlignment="Center" 
+                <TextBox Name="LoginTb" Text="Введите имя пользователя" VerticalContentAlignment="Center" 
                  FontSize="15" Foreground="White" Background="Transparent"
-                         Height="40" Width="190"/>
+                         Height="40" Width="190" MouseEnter="TextBox_MouseEnter" MouseLeave="LoginTb_MouseLeave"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="30">
                 <Image Source="/Sourse/lock 1.png"  Width="35"/>
-                <PasswordBox VerticalContentAlignment="Center" 
+                <PasswordBox Name="Password" VerticalContentAlignment="Center" 
      FontSize="15" Foreground="White" Background="Transparent" Height="40" Width="190"/>
             </StackPanel>
            
