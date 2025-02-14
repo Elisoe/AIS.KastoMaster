@@ -28,7 +28,7 @@ namespace AIS.KastoMaster.View.Windows
 
         private void TextBox_MouseEnter(object sender, MouseEventArgs e)
         {
-            if(LoginTb.Text == "Введите имя пользователя")
+            if(LoginTb.Text == "Введите имя пользователя1")
             {
                 LoginTb.Text = String.Empty;
             }            
