@@ -5,43 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AIS.KastoMaster.View.Windows"
         mc:Ignorable="d"
-        Title="Окно авторизации" Height="450" Width="800">
+        Title="Окно авторизации" Height="1080" Width="1920">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="370"/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="920"/>
+            <ColumnDefinition Width="500"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="65"/>
-            <RowDefinition Height="325"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/Sourse/background.jpg" />
         </Grid.Background>
-        <Border Background="White" CornerRadius="30" Opacity="0.5"
-                Width="Auto" Height="420"
-                Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" />
-    
-        <TextBlock Text="KastoMaster"
-         FontSize="27" Foreground="White"
-         Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-        <StackPanel Grid.Row="2" Grid.Column="1">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/Sourse/user.png" Width="30" />
-                <TextBox Name="LoginTb" Text="Введите имя пользователя" VerticalContentAlignment="Center" 
-                 FontSize="15" Foreground="White" Background="Transparent"
-                         Height="40" Width="190" MouseEnter="TextBox_MouseEnter" MouseLeave="LoginTb_MouseLeave"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="30">
-                <Image Source="/Sourse/lock 1.png"  Width="35"/>
-                <PasswordBox Name="Password" VerticalContentAlignment="Center" 
-     FontSize="15" Foreground="White" Background="Transparent" Height="40" Width="190"/>
-            </StackPanel>
-           
-        </StackPanel>
-        <Button Content="Войти" Grid.Row="2" Grid.Column="1" Height="30" Width="70" VerticalAlignment="Bottom" Margin="20"/>
-
+        <Border Background="White" CornerRadius="40" Opacity="0.5"
+                Width="920" Height="1000"
+                Grid.Column="1" Grid.Row="0" Grid.RowSpan="11" Margin="0,13,0,11"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="KASTOMASTER" 
+                   FontSize="70" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox Name="LoginTb" Grid.Row="3" Grid.Column="1" Text="Имя пользователя" VerticalContentAlignment="Center" 
+                 FontSize="35" Foreground="White" Background="Transparent"
+                 Height="70" Width="500" MouseEnter="LoginTb_MouseEnter" MouseLeave="LoginTb_MouseLeave"/>
+        <PasswordBox Name="PasswordPb" VerticalContentAlignment="Center" 
+                     Foreground="White" Background="Transparent" 
+                     Height="70" Width="500" Grid.Row="5" Grid.Column="1" FontSize="35"/>
+        <Button Name="AuthorizationBtn" Grid.Row="8" Grid.Column="1"
+                Content="Войти"  Height="70" Width="200" FontSize="45" Background="#011c36" Foreground="White"/>
     </Grid>
 </Window>

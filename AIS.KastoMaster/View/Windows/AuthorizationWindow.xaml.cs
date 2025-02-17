@@ -20,28 +20,31 @@ namespace AIS.KastoMaster.View.Windows
     /// </summary>
     public partial class AuthorizationWindow : Window
     {
-        int MouseFlag = 0;
+       
         public AuthorizationWindow()
         {
             InitializeComponent();
         }
 
-        private void TextBox_MouseEnter(object sender, MouseEventArgs e)
+        private void LoginTb_MouseEnter(object sender, MouseEventArgs e)
         {
-            if(LoginTb.Text == "Введите имя пользователя1")
+            if (LoginTb.Text == "Имя пользователя")
             {
                 LoginTb.Text = String.Empty;
-            }            
+            }
         }
 
         private void LoginTb_MouseLeave(object sender, MouseEventArgs e)
         {
-               if (LoginTb.Text == String.Empty)
+            if (LoginTb.Text == String.Empty)
             {
-                LoginTb.Text = "Введите имя пользователя";
+                LoginTb.Text = "Имя пользователя";
             }
         }
 
-   
+        
+
+       
+
     }
 }
