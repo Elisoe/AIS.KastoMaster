@@ -1,0 +1,52 @@
+﻿<Window x:Class="AIS.KastoMaster.View.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS.KastoMaster.View.Windows"
+        mc:Ignorable="d"
+          Title="Главное окно" Height="1080" Width="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="580"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sourse/background.jpg" />
+        </Grid.Background>
+        <Border Background="White" CornerRadius="40" Opacity="0.5"
+        Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="1"/>
+        <Border Background="White" CornerRadius="40" Opacity="0.5"
+  Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="3"/>
+        <Border Background="White" CornerRadius="40" Opacity="0.5"
+  Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="5"/>
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="KASTOMASTER" 
+              FontSize="70" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Name="ActiveOrderBtn" Grid.Row="4" Grid.Column="1"
+          Content="активные заказы"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
+        <Button Name="CreatNewOrdetBtn" Grid.Row="4" Grid.Column="3"
+          Content="создать заказ"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
+        <Button Name="HistoryOrder" Grid.Row="4" Grid.Column="5"
+          Content="история заказов"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
+        <Image Source="/Sourse/needle.png" Grid.Row="3" Grid.Column="1" Width="250" />
+        <Image Source="/Sourse/clock.png" Grid.Row="3" Grid.Column="5" Width="250"  />
+        <Image Source="/Sourse/sketchbook.png"  Grid.Row="3" Grid.Column="3" Width="250"  />
+
+
+    </Grid>
+
+
+</Window>
