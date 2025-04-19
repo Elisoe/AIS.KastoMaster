@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AIS.KastoMaster.View.Windows"
         mc:Ignorable="d"
-        Title="Окно авторизации" Height="1080" Width="1920">
+        Title="Окно авторизации" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"/>
@@ -13,7 +13,7 @@
             <ColumnDefinition Width="500"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="90"/>
+            <RowDefinition Height="55"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="150"/>
             <RowDefinition Height="1*"/>
@@ -27,7 +27,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Sourse/background.jpg" />
         </Grid.Background>
-        <Border Background="White" CornerRadius="40" Opacity="0.5"
+        <Border Background="White" CornerRadius="70" Opacity="0.4"
                 Width="920" Height="1000"
                 Grid.Column="1" Grid.Row="0" Grid.RowSpan="11" Margin="0,13,0,11"/>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="KASTOMASTER" 
@@ -39,6 +39,7 @@
                      Foreground="White" Background="Transparent" 
                      Height="70" Width="500" Grid.Row="5" Grid.Column="1" FontSize="35"/>
         <Button Name="AuthorizationBtn" Grid.Row="8" Grid.Column="1"
-                Content="Войти"  Height="70" Width="200" FontSize="45" Background="#011c36" Foreground="White"/>
+                Content="Войти"  Height="70" Width="200" FontSize="45" 
+                Background="#011c36" Foreground="White" Click="AuthorizationBtn_Click"/>
     </Grid>
 </Window>

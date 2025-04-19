@@ -42,9 +42,11 @@ namespace AIS.KastoMaster.View.Windows
             }
         }
 
-        
-
-       
-
+        private void AuthorizationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

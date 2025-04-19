@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AIS.KastoMaster.View.Windows"
         mc:Ignorable="d"
-          Title="Главное окно" Height="1080" Width="1920">
+          Title="Главное окно" Height="1080" Width="1920" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -27,20 +27,20 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Sourse/background.jpg" />
         </Grid.Background>
-        <Border Background="White" CornerRadius="40" Opacity="0.5"
+        <Border Background="White" CornerRadius="60" Opacity="0.5"
         Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="1"/>
-        <Border Background="White" CornerRadius="40" Opacity="0.5"
+        <Border Background="White" CornerRadius="60" Opacity="0.5"
   Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="3"/>
-        <Border Background="White" CornerRadius="40" Opacity="0.5"
+        <Border Background="White" CornerRadius="60" Opacity="0.5"
   Width="500" Height="680" Grid.Row="3" Grid.RowSpan="2"   Grid.Column="5"/>
         <TextBlock Grid.Row="1" Grid.Column="3" Text="KASTOMASTER" 
               FontSize="70" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Button Name="ActiveOrderBtn" Grid.Row="4" Grid.Column="1"
-          Content="активные заказы"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
+          Content="активные заказы"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White" Click="ActiveOrderBtn_Click"/>
         <Button Name="CreatNewOrdetBtn" Grid.Row="4" Grid.Column="3"
           Content="создать заказ"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
         <Button Name="HistoryOrder" Grid.Row="4" Grid.Column="5"
-          Content="история заказов"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White"/>
+          Content="история заказов"  Height="70" Width="400" FontSize="45" Background="#011c36" Foreground="White" Click="HistoryOrder_Click"/>
         <Image Source="/Sourse/needle.png" Grid.Row="3" Grid.Column="1" Width="250" />
         <Image Source="/Sourse/clock.png" Grid.Row="3" Grid.Column="5" Width="250"  />
         <Image Source="/Sourse/sketchbook.png"  Grid.Row="3" Grid.Column="3" Width="250"  />

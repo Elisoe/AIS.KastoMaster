@@ -23,5 +23,19 @@ namespace AIS.KastoMaster.View.Windows
         {
             InitializeComponent();
         }
+
+        private void HistoryOrder_Click(object sender, RoutedEventArgs e)
+        {
+            OrderHistoryWindow orderHistoryWindow = new OrderHistoryWindow();   
+            orderHistoryWindow.Show();
+            this.Close();
+        }
+
+        private void ActiveOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ActiveOrderWindow activeOrderWindow = new ActiveOrderWindow();
+            activeOrderWindow.Show();
+            this.Close();
+        }
     }
 }
