@@ -1,0 +1,63 @@
+﻿<Window x:Class="AIS.KastoMaster.View.Windows.NewOrderOrderVerification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS.KastoMaster.View.Windows"
+        mc:Ignorable="d"
+                      Title="CreatNewOrder1" Height="1080" Width="1920" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Sourse/background.jpg" />
+        </Grid.Background>
+        <Border Background="White" CornerRadius="70" Opacity="0.5"
+Width="1650" Height="800" Grid.RowSpan="10" Grid.ColumnSpan="5" Margin="135,132,-465,132"/>
+        <TextBlock Grid.Row="0" Text="KASTOMASTER" 
+         FontSize="70" Foreground="White" VerticalAlignment="Center" 
+          Grid.Column="3"  HorizontalAlignment="Center"/>
+        <TextBlock Text="Создание заказа" Grid.Row="2" Grid.Column="3"  FontSize="60" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="4" Grid.Column="1" Grid.RowSpan="4" VerticalAlignment="Top">
+            <TextBlock Text="Введите имя клиента:"  FontSize="40" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Height="70" Width="500"/>
+            <TextBlock Text="Введите номер клиента"  FontSize="40" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Height="70" Width="500"/>
+            <TextBlock Text="Тип одежды:"  FontSize="40" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Height="200" Width="500"/>
+        </StackPanel>
+
+        <TextBlock Text="Дизайн:" Grid.Row="4" Grid.Column="3" FontSize="40" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Width="1000" Height="439" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="0,0,-400,28"  />
+
+        <Button Content="Далее" Grid.Row="8" Grid.Column="3" FontSize="60"/>
+        <Button Name="GoEnd" Content="Назад" Grid.Row="8" Grid.Column="1" FontSize="60" />
+
+       
+            
+              
+           
+
+    </Grid>
+</Window>

@@ -37,5 +37,12 @@ namespace AIS.KastoMaster.View.Windows
             activeOrderWindow.Show();
             this.Close();
         }
+
+        private void CreatNewOrdetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NewOrderClientInfo newOrderClientInfo = new NewOrderClientInfo();
+            newOrderClientInfo.Show();
+            this.Close();
+        }
     }
 }

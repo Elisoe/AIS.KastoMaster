@@ -68,9 +68,25 @@
     <Compile Include="View\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Windows\NewOrderChoiceOfClothes.xaml.cs">
+      <DependentUpon>NewOrderChoiceOfClothes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\NewOrderClientInfo.xaml.cs">
+      <DependentUpon>NewOrderClientInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\NewOrderDesign.xaml.cs">
+      <DependentUpon>NewOrderDesign.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\NewOrderOrderVerification.xaml.cs">
+      <DependentUpon>NewOrderOrderVerification.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Windows\OrderHistoryWindow.xaml.cs">
       <DependentUpon>OrderHistoryWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\ActiveOrderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,6 +96,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\NewOrderChoiceOfClothes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\NewOrderClientInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\NewOrderDesign.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\NewOrderOrderVerification.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,5 +160,6 @@
     <Resource Include="Sourse\needle.png" />
     <Resource Include="Sourse\sketchbook.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
